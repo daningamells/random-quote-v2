@@ -11,9 +11,24 @@
   <div class="container">
     <div id="quote-box">
       <p class="quote">You can do anything but not everything</p>
-      <p class="source">David Allen<span class="citation">Making It All Work</span><span class="year">2009</span></p>
+      <p class="source">David Allen<span class="citation">Making It All Work</span><span class="year">2009</span><span class="genre">rock</span></p>
     </div>
     <button id="loadQuote">Show another quote</button>
+    <button id="addQuote" onclick="addQuote()" >Add quote</button>
+  </div>
+  <div id="quoteInput">
+    <form>
+      Quote:<br>
+      <input type="text" name="firstname"><br>
+      Source:<br>
+      <input type="text" name="Source"><br>
+      Citation:<br>
+      <input type="text" name="Citation"><br>
+      Year:<br>
+      <input type="text" name="Year"><br>
+      Genre:<br>
+      <input type="text" name="Genre"><br>
+    </form>
   </div>
   <script src="js/script.js"></script>
 </body>
