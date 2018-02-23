@@ -14,14 +14,14 @@ var selectedNumberList = []; //array to hold random number list
 var newQuote;           //new quote to push into quotes array if user completes form
 var quotes = [          //array holding quote information
   {
-  quote: "It's been so lonely without you here, Like a bird without a song",
+  quote: "It's been so lonely without you here. Like a bird without a song",
   source: "Prince",
   citation: "Nothing Compares 2 U",
   year: "2002",
   genre: "Rock",
 },
   {
-  quote: "I wanna glide down over Mulholland, I wanna write her name in the sky",
+  quote: "I wanna glide down over Mulholland. I wanna write her name in the sky",
   source: "Tom Petty",
   citation: "Free Fallin",
   year: "1989",
@@ -34,29 +34,31 @@ var quotes = [          //array holding quote information
   year: "1971",
   genre: "Rock",
 },
+  {
+  quote: "Take me to the place where you go. Where nobody knows if it's night or day",
+  source: "Oasis",
+  citation: "Don't look back in anger",
+  year: "1996",
+  genre: "Rock",
+},
+  {
+  quote: "Scars are souvenirs you never lose. The past is never far",
+  source: "Goo Goo Dolls",
+  citation: "Name",
+  year: "1995",
+  genre: "Rock",
+  },
 ];
 // function to get a random number
 function getRandomQuote() {
-selectedNumber = Math.floor(Math.random() * Math.floor(quotes.length));
-previousNumber = selectedNumberList.pop(); //save previousNumber and remove from array
-selectedNumberList.push(selectedNumber);   //push random number into array
-while (selectedNumber === previousNumber){
-  selectedNumber = Math.floor(Math.random() * Math.floor(quotes.length));
-  selectedNumberList.push(selectedNumber);
-}
-
-  selectedQuote = quotes[selectedNumber].quote; //setting variables for string
-  selectedSouce = quotes[selectedNumber].source;
-  selectedCitation = quotes[selectedNumber].citation;
-  selectedYear = quotes[selectedNumber].year;
-  genre = quotes[selectedNumber].genre;
+  return quotes[Math.floor(Math.random() * quotes.length)]; //return random quote
 };
 
 
 function printQuote() {
-  getRandomQuote();
-  finalQuote = "<p class='quote'>" + selectedQuote + "</p> <p class='source'>" + selectedSouce +
-  "<span class='citation'>" + selectedCitation + "</span> <span class='year'>" + selectedYear + "</span> <span class='genre'>" + genre +
+  var getQuote = getRandomQuote();
+  finalQuote = "<p class='quote'>" + getQuote.quote + "</p> <p class='source'>" + getQuote.source +
+  "<span class='citation'>" + getQuote.citation + "</span> <span class='year'>" + getQuote.year + "</span> <span class='genre'>" + getQuote.genre +
   "</span> </p>";
   document.getElementById('quote-box').innerHTML = finalQuote;
 };
