@@ -1,0 +1,54 @@
+[
+  {
+    "Position": 1,
+    "Team Name": "Team A",
+    "Rounders": 100,
+    "Netball": 80,
+    "Table Tennis": 100,
+    "Party Games": 80,
+    "Football": 100,
+    "Badminton": 80,
+    "Chess": 100,
+    "Golf": 80,
+    "Track & Field": 80
+  },
+  {
+    "Position": 2,
+    "Team Name": "Team B",
+    "Rounders": 0,
+    "Netball": 20,
+    "Table Tennis": 0,
+    "Party Games": 20,
+    "Football": 0,
+    "Badminton": 20,
+    "Chess": 0,
+    "Golf": 20,
+    "Track & Field": 20
+  },
+  {
+    "Position": 3,
+    "Team Name": "Team C",
+    "Rounders": 0,
+    "Netball": 0,
+    "Table Tennis": 0,
+    "Party Games": 0,
+    "Football": 0,
+    "Badminton": 0,
+    "Chess": 0,
+    "Golf": 0,
+    "Track & Field": 0
+  },
+  {
+    "Position": 4,
+    "Team Name": "Team D",
+    "Rounders": 0,
+    "Netball": 0,
+    "Table Tennis": 0,
+    "Party Games": 0,
+    "Football": 0,
+    "Badminton": 0,
+    "Chess": 0,
+    "Golf": 0,
+    "Track & Field": 0
+  }
+]
